@@ -1,56 +1,125 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
 	<title>Video games are awful</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
 	<div id="streamCanvas">
-		<div class="mySlides w3-animate-opacity""> 
+		<div class="mySlides">
 			<div class="imageBG" style="background-image:url(img/anthony-delanoix-15928.jpg);"></div>
 
 			<div class="imageFG" style="background-image:url(img/anthony-delanoix-15928.jpg);">
 
-				<div class="titleContainer"><span class="slideTitle">aznmike123</span></div>
-				<div class="subtitleContainer"><span class="slideSubtitle">Fullscreen</span></div>
+				<div class="titleContainer">
+					<span class="slideTitle">aznmike123</span>
+				</div>
+				<div class="subtitleContainer">
+					<span class="slideSubtitle">Fullscreen</span>
+				</div>
 
 			</div>
 		</div>
 
-		<!-- <div class="mySlides w3-animate-opacity""> 
+		<div class="mySlides">
 			<div class="imageBG" style="background-image:url(img/monster-hunter-screenshot.jpg);"></div>
 
 			<div class="imageFG" style="background-image:url(img/monster-hunter-screenshot.jpg);">
 
-				<div class="titleContainer"><span class="slideTitle">Monster Hunter World</span></div>
-				<div class="subtitleContainer"><span class="slideSubtitle">Now Playing</span></div>
+				<div class="titleContainer">
+					<span class="slideTitle titleTwitch">Monster Hunter World</span>
+				</div>
+				<div class="subtitleContainer">
+					<span class="slideSubtitle subtitleTwitch">Now Playing</span>
+				</div>
 
 			</div>
-		</div> -->
+		</div>
+
+		<div class="mySlides">
+			<div class="imageBG" style="background-image:url(img/sadman-sakib-310014.jpg);"></div>
+
+			<div class="imageFG" style="background-image:url(img/sadman-sakib-310014.jpg);">
+
+				<div class="titleContainer">
+					<span class="slideTitle titleTwitter">Social Media</span>
+				</div>
+				<div class="subtitleContainer">
+					<span class="slideSubtitle subtitleTwitter">@mikeHEARTu</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="imageBG" style="background-image:url(img/ben-neale-297658.jpg);"></div>
+
+			<div class="imageFG" style="background-image:url(img/ben-neale-297658.jpg);">
+
+				<div class="titleContainer">
+					<span class="slideTitle titleTwitch">Twitch Prime</span>
+				</div>
+				<div class="subtitleContainer">
+					<span class="slideSubtitle subtitleTwitch">in-game loot, ad-free viewing, and a free* channel sub</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="imageBG" style="background-image:url(img/yvette-de-wit-118719.jpg);"></div>
+
+			<div class="imageFG" style="background-image:url(img/yvette-de-wit-118719.jpg);">
+
+				<div class="titleContainer">
+					<span class="slideTitle titlePretzel">Pretzel</span>
+				</div>
+				<div class="subtitleContainer">
+					<span class="slideSubtitle subtitlePretzel">Royalty-free music for Livestreamers</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="mySlides">
+			<div class="imageBG" style="background-image:url(img/civilization-vi-steam-screenshot.jpg);"></div>
+
+			<div class="imageFG" style="background-image:url(img/civilization-vi-steam-screenshot.jpg);">
+
+				<div class="titleContainer">
+					<span class="slideTitle titleHumble">Humble Affiliate</span>
+				</div>
+				<div class="subtitleContainer">
+					<span class="slideSubtitle subtitleHumble">Unlock Civ VI now in the Humble Monthly Bundle</span>
+				</div>
+
+			</div>
+		</div>
 	</div>
 
 
-	<!-- <script>
+	<script>
 		var slideIndex = 0;
 		carousel();
 
 		function carousel() {
-		    var i;
-		    var x = document.getElementsByClassName("mySlides");
-		    for (i = 0; i < x.length; i++) {
-		      x[i].style.display = "none"; 
-		    }
-		    slideIndex++;
-		    if (slideIndex > x.length) {slideIndex = 1} 
-		    x[slideIndex-1].style.display = "block"; 
-		    setTimeout(carousel, 5000); // Change image every 15 seconds
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > x.length) { slideIndex = 1 }
+			x[slideIndex - 1].style.display = "block";
+			setTimeout(carousel, 5000); // Change image every 5 seconds
 		}
-	</script> -->
+	</script>
 </body>
+
 </html>

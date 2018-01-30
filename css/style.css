@@ -16,12 +16,15 @@ body
 }
 .mySlides 
 {
-	font-family: Lato, helvetica, calibri;
+	overflow: hidden;
+	font-family: Lato, Helvetica, Calibri, sans-serif;
 	position: absolute;
 	width: 1920px;
 	height: 1080px;
 	left:0;
 	top:0;
+	animation-name:slideIn;
+    animation-duration:1s;
 }
 .imageBG
 {
@@ -61,17 +64,16 @@ body
 {
 	display: inline-block;
 	animation-name:fadeIn;
-    animation-duration:1s;
-    background: red;
+	animation-duration:1s;
+	animation-fill-mode:backwards;
 }
 .slideTitle
 {
     font-size: 100px;
     font-weight: lighter;
     background:#1359ff;
-    line-height:120px;
-    line-height:134px;
-    padding:0 35px;
+	padding:0 35px;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
 .subtitleContainer
 {
@@ -79,8 +81,7 @@ body
 	animation-name:fadeIn;
     animation-duration:1s;
     animation-delay:.5s;
-    animation-fill-mode:backwards;
-    background: purple;
+	animation-fill-mode:backwards;
 }
 .slideSubtitle
 {
@@ -88,9 +89,64 @@ body
     font-weight: bolder;
     background:#1359ff;
     background:rgba(19,89,255,.65);
-    line-height:56px;
-    line-height:66px;
-    padding:0 25px;
+	padding:0 25px;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.titleTwitch
+{
+	background: #6441A4;
+}
+
+.subtitleTwitch
+{
+	background: #6441A4;
+	background:rgba(100,65,164,0.65);
+}
+
+.titleTwitter
+{
+	background: #1da1f2;
+}
+
+.subtitleTwitter
+{
+	background: #1da1f2;
+	background:rgba(29,161,242,0.65);
+}
+
+.titlePretzel
+{
+	background: #1bb3a3;
+}
+
+.subtitlePretzel
+{
+	background: #1bb3a3;
+	background:rgba(27,179,163,0.65);
+}
+
+.titleHumble
+{
+	background: #d0011b;
+}
+
+.subtitleHumble
+{
+	background: #d0011b;
+	background:rgba(208,1,27,0.65);
+}
+
+@keyframes slideIn
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
 }
 
 @keyframes backgroundBlur
